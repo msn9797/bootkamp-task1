@@ -1,0 +1,171 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* root */
+
+:root {
+  --color-btn-primary: #219f95;
+  --color-frame: #afcedd;
+  --color-white: #ffffff;
+  --color-secondary: #696969;
+  --border-radious-one: 8px;
+  --border-radious-two: 6px;
+}
+
+html {
+  font-size: 62.5%;
+}
+h1,
+h2 {
+  color: #1e1e1e;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+/* button */
+
+.btn {
+  border: 0;
+  border-radius: var(--border-radious-one);
+  cursor: pointer;
+  padding: 1.5rem 1rem;
+  width: 150px;
+}
+
+.btn-primary {
+  font-size: 1.2rem;
+  background-color: var(--color-btn-primary);
+  color: var(--color-white);
+}
+
+/* header */
+.heading {
+  color: #1e1e1e;
+  font-size: 3rem;
+}
+
+.heading {
+  position: relative;
+  right: 8%;
+  bottom: 27px;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1230px) {
+  .heading {
+    position: relative;
+    right: 0.5%;
+  }
+}
+
+/* frame */
+
+.frame {
+  font-size: 1.8rem;
+  font-weight: 900;
+  background-color: var(--color-frame);
+  color: #234894;
+  border-radius: var(--border-radious-two);
+  padding: 1rem 1.7rem;
+}
+
+/* block task */
+
+.block-task {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 420px));
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.block-task {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1230px) {
+  .block-task {
+    grid-template-columns: repeat(3, 420px);
+  }
+}
+
+/* box */
+
+.task__box {
+  padding: 0.5rem 0.5rem;
+}
+
+.task__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+@media screen and (max-width: 430px) {
+  .task__item {
+    width: 300px;
+  }
+}
+
+.task__text {
+  color: #234894;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.task__date {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.task__heading {
+  margin-bottom: 0.3rem;
+  margin-top: 3rem;
+}
+.task__number {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.task__item img {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--border-radious-one);
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.task__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* containar */
+
+.container {
+  max-width: 1336px;
+  margin: 56px auto;
+}
+
+.block {
+  padding: 6rem 2rem;
+}
